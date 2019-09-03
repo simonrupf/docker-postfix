@@ -1,5 +1,5 @@
 FROM alpine:3.10
-RUN apk add --no-cache postfix tzdata
+RUN apk add --no-cache postfix postfix-mysql tzdata
 RUN echo "maillog_file = /dev/stdout" >> /etc/postfix/main.cf
 
 # apperantly, "the postfix command is reserved for the superuser"
