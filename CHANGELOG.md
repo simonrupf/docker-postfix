@@ -1,5 +1,8 @@
 # postfix change log
 
+## 0.3.1
+update to Alpine 3.14 / postfix 3.6.1
+
 ## 0.3.0
 update to Alpine 3.13 / postfix 3.5.9 / removal of BerkeleyDB in Alpine
 
