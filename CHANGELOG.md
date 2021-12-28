@@ -1,5 +1,8 @@
 # postfix change log
 
+## 0.3.2
+update to Alpine 3.15 / postfix 3.6.3
+
 ## 0.3.1
 update to Alpine 3.14 / postfix 3.6.1
 
