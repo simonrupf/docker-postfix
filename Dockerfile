@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.17
 RUN apk upgrade --no-cache && \
     apk add --no-cache postfix postfix-mysql tzdata
 RUN echo "maillog_file = /dev/stdout" >> /etc/postfix/main.cf
