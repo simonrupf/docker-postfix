@@ -1,5 +1,8 @@
 # postfix change log
 
+## 0.3.8
+update to postfix 3.8.4 / SMTP smuggling mitigation
+
 ## 0.3.7
 update to Alpine 3.19 / postfix 3.8.3 / openssl 3.1.4
 

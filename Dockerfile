@@ -5,8 +5,13 @@ LABEL org.opencontainers.image.authors="Simon Rupf <simon@rupf.net>" \
       org.opencontainers.image.version="${VERSION}"
 
 RUN apk upgrade --no-cache && \
-    apk add --no-cache postfix postfix-mysql tzdata
-RUN echo "maillog_file = /dev/stdout" >> /etc/postfix/main.cf
+    apk add --no-cache postfix postfix-mysql tzdata && \
+    ( \
+        echo "maillog_file = /dev/stdout" && \
+        echo "smtpd_forbid_bare_newline = yes" && \
+        echo "smtpd_forbid_unauth_pipelining = yes" \
+    ) >> /etc/postfix/main.cf && \
+    newaliases -oA/etc/postfix/aliases
 
 # apparantly, "the postfix command is reserved for the superuser"
 USER root:root
