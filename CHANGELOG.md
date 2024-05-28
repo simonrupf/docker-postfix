@@ -1,5 +1,8 @@
 # postfix change log
 
+## 0.3.9
+update to Alpine 3.20 / postfix 3.9.0 / openssl 3.3.0
+
 ## 0.3.8
 update to postfix 3.8.4 / SMTP smuggling mitigation
 
@@ -41,4 +44,3 @@ adding mysql/mariadb support
 
 ## 0.1.0
 initial checkin, minimal postfix setup
-
