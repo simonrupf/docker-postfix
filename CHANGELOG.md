@@ -1,5 +1,8 @@
 # postfix change log
 
+## 0.3.10
+update to Alpine 3.21 / postfix 3.9.1 / openssl 3.3.2
+
 ## 0.3.9
 update to Alpine 3.20 / postfix 3.9.0 / openssl 3.3.0
 
