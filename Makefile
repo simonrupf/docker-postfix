@@ -13,7 +13,7 @@ run: ## Run a container from the image.
 
 test: ## Launch tests to verify that the service works as expected, requires a running container.
 	@sleep 1
-	{ sleep 0.1; echo -n "quit"; } | nc localhost $(PORT) | grep "ESMTP Postfix"
+	{ sleep 0.1; echo -n "quit"; } | nc 127.0.0.1 $(PORT) | grep "ESMTP Postfix"
 
 exec: ## Execute a shell in the running container for inspection, requires a running container.
 	docker exec -ti $(NAME) $(CMD)
